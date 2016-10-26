@@ -88,6 +88,7 @@ class ArgumentSet {
         this.printLabel = false
         this.printName = false
         this.race = false
+        this.yarn = false
         this.rest = []
         this.silent = process.env.npm_config_loglevel === "silent"
         this.singleMode = Boolean(options.singleMode)
@@ -147,6 +148,11 @@ function parseCLIArgsCore(set, args) {    // eslint-disable-line complexity
             case "-r":
             case "--race":
                 set.race = true
+                break
+
+            case "-y":
+            case "--yarn":
+                set.yarn = true
                 break
 
             case "--silent":

@@ -38,6 +38,7 @@ module.exports = function npmRunAll(args, stdout, stderr) {
             printName,
             silent,
             rest,
+            yarn,
         } = parseCLIArgs(args, {parallel: false}, {singleMode: true})
 
         if (patterns.length === 0) {
@@ -58,6 +59,7 @@ module.exports = function npmRunAll(args, stdout, stderr) {
                 packageConfig,
                 silent,
                 arguments: rest,
+                yarn,
             }
         )
     }
