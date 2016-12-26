@@ -43,6 +43,7 @@ Options:
     -n, --print-name   - - - - Set the flag to print the task name before
                                running each task.
     -s, --silent   - - - - - - Set 'silent' to the log level of npm.
+    -y, --yarn   - - - - - - - Use yarn instead of npm.
 
     Shorthand aliases can be combined.
     For example, '-clns' equals to '-c -l -n -s'.

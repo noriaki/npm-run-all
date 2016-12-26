@@ -125,6 +125,7 @@ module.exports = function runTask(
         labelState,
         printName,
         packageInfo,
+        yarn,
     }
 ) {
     let cp = null
@@ -142,7 +143,7 @@ module.exports = function runTask(
 
         // Execute.
         cp = spawn(
-            "npm",
+            yarn ? "yarn" : "npm",
             ["run"].concat(prefixOptions, parseArgs(task)),
             {stdio: [stdinKind, stdoutKind, stderrKind]}
         )
