@@ -81,6 +81,9 @@ Run npm-scripts.
     The string array of all script names.
     If this is `null`, it reads from `package.json` in the current directory.
     Default is `null`.
+  - **options.yarn** `boolean` --
+    The flag to use yarn package manager instead of npm.
+    Default is `false`.
 
 `runAll` returns a promise that will becomes *fulfilled* when all scripts are completed.
 The promise will become *rejected* when any of the scripts exit with a non-zero code.

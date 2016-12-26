@@ -38,6 +38,7 @@ module.exports = function npmRunAll(args, stdout, stderr) {
             printName,
             silent,
             race,
+            yarn,
             rest,
         } = parseCLIArgs(args, {parallel: true}, {singleMode: true})
 
@@ -60,6 +61,7 @@ module.exports = function npmRunAll(args, stdout, stderr) {
                 silent,
                 arguments: rest,
                 race,
+                yarn,
             }
         )
 

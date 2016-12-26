@@ -39,6 +39,7 @@ module.exports = function npmRunAll(args, stdout, stderr) {
             silent,
             race,
             rest,
+            yarn,
         } = parseCLIArgs(args)
 
         const promise = groups.reduce(
@@ -61,6 +62,7 @@ module.exports = function npmRunAll(args, stdout, stderr) {
                         silent,
                         arguments: rest,
                         race,
+                        yarn,
                     }
                 ))
             },

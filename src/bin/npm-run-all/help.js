@@ -53,6 +53,7 @@ Options:
                                     'npm run foo && npm run bar'.
                                '--serial' is a synonym of '--sequential'.
     --silent   - - - - - - - - Set 'silent' to the log level of npm.
+    -y, --yarn   - - - - - - - Use yarn instead of npm.
 
 Examples:
     $ npm-run-all --serial clean lint build:**
