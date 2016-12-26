@@ -43,6 +43,7 @@ Options:
     -r, --race   - - - - - - - Set the flag to kill all tasks when a task
                                finished with zero.
     -s, --silent   - - - - - - Set 'silent' to the log level of npm.
+    -y, --yarn   - - - - - - - Use yarn instead of npm.
 
     Shorthand aliases can be combined.
     For example, '-clns' equals to '-c -l -n -s'.

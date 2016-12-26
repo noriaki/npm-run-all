@@ -222,6 +222,7 @@ module.exports = function npmRunAll(
         printName = false,
         arguments: args = [],
         race = false,
+        yarn = false,
     } = {}
 ) {
     try {
@@ -272,6 +273,7 @@ module.exports = function npmRunAll(
                     printName,
                     packageInfo,
                     race,
+                    yarn,
                 })
             })
     }
